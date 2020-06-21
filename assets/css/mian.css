@@ -1,0 +1,875 @@
+/* --------- tipografia --------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* --------- fin tipografia --------- */
+
+/* --------- general --------- */
+
+:root {
+    --primario  : #280144;
+    --secuntario: #2B0082;
+    --fondo     : #EFEFEF;
+    --blanco    : #FFFFFF;
+    --dark      : #232323;
+    --negro     : #1c1c1c;
+    --gris-l    : #F5F5F5;
+    --gris      : #E5E5E5;
+    --amarillo  : #FEFF33;
+    --naranja   : #FF8935;
+}
+
+* {
+    margin    : 0;
+    padding   : 0;
+    box-sizing: border-box;
+}
+
+body {
+    background : var(--fondo);
+    font-family: 'Poppins', sans-serif;
+    font-size  : 0.8rem;
+}
+
+.contenedor {
+    width : 90%;
+    margin: auto;
+}
+
+.fade {
+    animation: fading 5s infinite;
+}
+
+/* --------- fin general --------- */
+
+/* --------- header--------- */
+
+header {
+    padding   : 12px 0px;
+    background: var(--blanco);
+    position  : fixed;
+    width     : 100%;
+}
+
+header .contenedor {
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+}
+
+header .social-yjgr {
+    display    : flex;
+    align-items: center;
+}
+
+header .social-icon {
+    font-size      : 1rem;
+    background     : var(--gris-l);
+    width          : 30px;
+    height         : 30px;
+    text-align     : center;
+    border-radius  : 100px;
+    padding-top    : 6px;
+    color          : var(--dark);
+    text-decoration: none;
+    margin-right   : 15px;
+}
+
+header .logo-yjgr {
+    margin-right: 25px;
+    color       : var(--dark);
+    font-weight : 800;
+    font-size   : 1.4rem;
+}
+
+header nav a {
+    color          : var(--dark);
+    text-decoration: none;
+    margin-right   : 15px;
+}
+
+header nav a:hover,
+header nav a.activo {
+    color: var(--naranja)
+}
+
+/* --------- fin header --------- */
+
+/* --------- hero --------- */
+
+.hero {
+    min-height         : 40.62em;
+    background         : linear-gradient(rgba(255, 255, 255, .50) 0%, rgba(255, 255, 255, .50) 100%), url(../img/hero-yjgr.svg);
+    background-position: center center;
+    background-size    : cover;
+    margin-bottom      : 3.12em;
+    display            : flex;
+    align-items        : center;
+}
+
+.hero .titulo-hero {
+    font-size    : 3.5em;
+    font-weight  : 800;
+    color        : var(--dark);
+    margin-bottom: 0.4em;
+}
+
+.hero .descripcion {
+    font-size    : 1.2em;
+    line-height  : 1.57em;
+    margin-bottom: 1em;
+}
+
+.hero .frase {
+    font-size    : 1em;
+    line-height  : 1.57em;
+    margin-bottom: 2.5em;
+}
+
+.hero .btn-primario {
+    background     : var(--primario);
+    border         : none;
+    border-radius  : 0.3em;
+    padding        : 0.7em 1.2em;
+    color          : var(--blanco);
+    margin-right   : 1.2em;
+    cursor         : pointer;
+    text-decoration: none;
+    transition     : .3s ease all;
+    font-size      : 1em;
+    font-weight    : 500;
+}
+
+.hero .btn-primario:hover {
+    background: var(--secuntario);
+}
+
+/* --------- fin hero --------- */
+
+/* --------- perfil --------- */
+
+.perfil {
+    min-height         : 40.62em;
+    background         : url(../img/perfil-yjgr.svg);
+    background-position: center center;
+    background-size    : cover;
+    margin-bottom      : 3.12em;
+    display            : flex;
+    align-items        : center;
+}
+
+.perfil .titulo-perfil {
+    font-size    : 3.5em;
+    font-weight  : 800;
+    color        : var(--dark);
+    margin-bottom: 0.4em;
+}
+
+.perfil .descripcion-perfil {
+    font-size    : 1.2em;
+    line-height  : 1.57em;
+    margin-bottom: 1em;
+}
+
+.perfil .flex-perfil {
+    display  : flex;
+    flex-wrap: nowrap;
+}
+
+.perfil .item-perfil {
+    width      : 100%;
+    align-items: center;
+}
+
+/* --------- fin perfil --------- */
+
+/* --------- portafolio --------- */
+
+.portafolio {
+    min-height   : 40.62em;
+    margin-bottom: 3.12em;
+    display      : flex;
+    align-items  : center;
+}
+
+.portafolio .titulo-portafolio {
+    font-size    : 3.5em;
+    font-weight  : 800;
+    color        : var(--dark);
+    margin-bottom: 0.4em;
+}
+
+.portafolio .filterDiv {
+    background-color: var(--primario);
+    color           : var(--blanco);
+    width           : 250px;
+    height          : 250px;
+    margin          : 15px;
+    border-radius   : 0.3em;
+    text-decoration : none;
+    display         : none;
+}
+
+.portafolio .filterDiv:hover {
+    color: var(--naranja);
+}
+
+.portafolio .contenedor-portafolio {
+    display   : flex;
+    flex-wrap : wrap;
+    margin-top: 20px;
+    overflow  : hidden;
+}
+
+.flex-portafolio {
+    display  : flex;
+    flex-wrap: wrap;
+}
+
+.portafolio .show {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+}
+
+.portafolio .btn-portafolio {
+    border          : none;
+    outline         : none;
+    padding         : 12px 16px;
+    background-color: transparent;
+    cursor          : pointer;
+    border-radius   : 0.3em;
+}
+
+.portafolio .btn-portafolio:hover {
+    background-color: var(--gris);
+}
+
+.portafolio .btn-portafolio.active {
+    background-color: transparent;
+    font-weight     : 800;
+    color           : var(--naranja);
+}
+
+/* --------- fin portafolio --------- */
+
+/* --------- holamundo --------- */
+
+.holamundo {
+    min-height         : 40.62em;
+    background         : url(../img/holamundo-yjgr.svg);
+    background-position: center center;
+    background-size    : cover;
+    display            : flex;
+    align-items        : center;
+}
+
+.holamundo .titulo-holamundo {
+    font-size    : 3.5em;
+    font-weight  : 800;
+    color        : var(--dark);
+    margin-bottom: 0.4em;
+}
+
+.holamundo .descripcion-holamundo {
+    font-size    : 1.2em;
+    line-height  : 1.57em;
+    margin-bottom: 1em;
+}
+
+.holamundo .flex-holamundo {
+    display  : flex;
+    flex-wrap: nowrap;
+}
+
+.holamundo .item-holamundo {
+    width      : 100%;
+    align-items: center;
+}
+
+/* --------- fin hola mundo --------- */
+
+/* --------- footer --------- */
+
+.footer {
+    padding         : 12px 0px;
+    left            : 0;
+    bottom          : 0;
+    width           : 100%;
+    background-color: var(--gris);
+    color           : var(--dark);
+    text-align      : center;
+    font-weight     : 400;
+}
+
+/* --------- fin footer --------- */
+
+/* --------- responsive --------- */
+
+@media screen and (max-width: 800px) {
+    header .social-yjgr {
+        margin-bottom: 5px;
+    }
+
+    header .contenedor {
+        flex-direction: column;
+    }
+
+    .hero {
+        background         : linear-gradient(rgba(255, 255, 255, .50) 0%, rgba(255, 255, 255, .50) 100%), url(../img/hero-yjgr.svg);
+        background-position: center center;
+        background-size    : cover;
+        font-size          : 11px;
+    }
+
+    .perfil {
+        font-size: 11px;
+    }
+
+    .perfil .flex-perfil {
+        flex-direction: column;
+    }
+
+    .portafolio .flex-portafolio {
+        display        : flex;
+        flex-wrap      : wrap;
+        justify-content: center;
+    }
+
+    .holamundo {
+        font-size: 11px;
+    }
+
+    .holamundo .flex-holamundo {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .hero {
+        font-size: 9px;
+    }
+}
+
+/* --------- fin responsive --------- */
+
+/* --------- iconos --------- */
+
+@font-face {
+    font-family: 'icomoon';
+    src        : url('../fonts/icomoon.eot?l38whm');
+    src        : url('../fonts/icomoon.eot?l38whm#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?l38whm') format('truetype'),
+        url('../fonts/icomoon.woff?l38whm') format('woff'),
+        url('../fonts/icomoon.svg?l38whm#icomoon') format('svg');
+    font-weight : normal;
+    font-style  : normal;
+    font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family   : 'icomoon' !important;
+    speak         : never;
+    font-style    : normal;
+    font-weight   : normal;
+    font-variant  : normal;
+    text-transform: none;
+    line-height   : 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing : antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-github:before {
+    content: "\e900";
+}
+
+.icon-twitter:before {
+    content: "\e901";
+}
+
+.icon-whatsapp:before {
+    content: "\e902";
+}
+
+/* --------- fin iconos --------- */
+
+/* --------- yweb --------- */
+
+main article {
+    background: var(--gris);
+    margin: 20px 0;
+    padding: 20px 0;
+    height: 1000px;
+}
+
+/* nav - enlaces */
+
+.menu-yweb {
+    background: var(--gris);
+    padding: 5px 0px;
+    margin-bottom: 20px;
+}
+
+.menu-yweb .contenedor-botones-menu {
+    /* display: flex; */
+    display: none;
+    justify-content: space-between;
+}
+
+.menu-yweb .contenedor-botones-menu button {
+    font-size: 20px;
+    color: var(--dark);
+    padding: 5px 10px;
+    border-radius: 3px;
+    border: 1px solid transparent;
+    display: inline-block;
+    cursor: pointer;
+    background: none;
+    transform: .3s ease all;
+}
+
+.menu-yweb .contenedor-botones-menu button:hover {
+    border: 1px solid rgba(255, 255, 255, .50);
+}
+
+.menu-yweb .contenedor-botones-menu .btn-menu-cerrar {
+    display: none;
+}
+
+.menu-yweb .contenedor-botones-menu .btn-menu-cerrar.activo {
+    display: inline-block;
+}
+
+.menu-yweb .contenedor-enlaces-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-yweb .btn-loquehacemos{
+    color: var(--dark);
+    padding: 7px;
+    border-radius: 3px;
+    display: flex;
+    align-items: flex-end;
+    border: 1px solid transparent;
+    cursor: default;
+}
+
+.menu-yweb .btn-loquehacemos:hover{
+    border: 1px solid rgba(255, 255, 255, .50)
+}
+
+.menu-yweb .btn-loquehacemos i{
+    margin-left: 20px;
+    position: relative;
+    bottom: 3px;
+}
+
+.menu-yweb .btn-loquehacemos .logo-menu{
+    margin-right: 10px;
+}
+
+.menu-yweb .btn-loquehacemos span{
+    display: block;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.menu-yweb .contenedor-enlaces-nav .enlaces a {
+    color: var(--dark);
+    padding: 7px;
+    text-decoration: none;
+}
+
+.menu-yweb .contenedor-enlaces-nav .enlaces a:hover {
+    color: var(--naranja);
+}
+
+/* --------- fin yweb --------- */
+
+/* --------- normalize.css v8.0.1 --------- */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+html {
+    line-height             : 1.15;
+    /* 1 */
+    -webkit-text-size-adjust: 100%;
+    /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+    margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+
+main {
+    display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+    font-size: 2em;
+    margin   : 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+    box-sizing: content-box;
+    /* 1 */
+    height    : 0;
+    /* 1 */
+    overflow  : visible;
+    /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+    font-family: monospace, monospace;
+    /* 1 */
+    font-size  : 1em;
+    /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+    background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+    border-bottom  : none;
+    /* 1 */
+    text-decoration: underline;
+    /* 2 */
+    text-decoration: underline dotted;
+    /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+    font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+    font-family: monospace, monospace;
+    /* 1 */
+    font-size  : 1em;
+    /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+    font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+    font-size     : 75%;
+    line-height   : 0;
+    position      : relative;
+    vertical-align: baseline;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+sup {
+    top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+
+img {
+    border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    /* 1 */
+    font-size  : 100%;
+    /* 1 */
+    line-height: 1.15;
+    /* 1 */
+    margin     : 0;
+    /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input {
+    /* 1 */
+    overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select {
+    /* 1 */
+    text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding     : 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+    padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+    box-sizing : border-box;
+    /* 1 */
+    color      : inherit;
+    /* 2 */
+    display    : table;
+    /* 1 */
+    max-width  : 100%;
+    /* 1 */
+    padding    : 0;
+    /* 3 */
+    white-space: normal;
+    /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+    vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+    overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+    box-sizing: border-box;
+    /* 1 */
+    padding   : 0;
+    /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+    -webkit-appearance: textfield;
+    /* 1 */
+    outline-offset    : -2px;
+    /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    /* 1 */
+    font              : inherit;
+    /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+    display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+    display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+
+template {
+    display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+    display: none;
+}
+
+/* --------- fin normalize.css v8.0.1 --------- */
