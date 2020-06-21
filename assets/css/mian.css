@@ -401,35 +401,35 @@ header nav a.activo {
 
 main article {
     background: var(--gris);
-    margin: 20px 0;
-    padding: 20px 0;
-    height: 1000px;
+    margin    : 20px 0;
+    padding   : 20px 0;
+    height    : 1000px;
 }
 
 /* nav - enlaces */
 
 .menu-yweb {
-    background: var(--gris);
-    padding: 5px 0px;
+    background   : var(--gris);
+    padding      : 5px 0px;
     margin-bottom: 20px;
 }
 
 .menu-yweb .contenedor-botones-menu {
     /* display: flex; */
-    display: none;
+    display        : none;
     justify-content: space-between;
 }
 
 .menu-yweb .contenedor-botones-menu button {
-    font-size: 20px;
-    color: var(--dark);
-    padding: 5px 10px;
+    font-size    : 20px;
+    color        : var(--dark);
+    padding      : 5px 10px;
     border-radius: 3px;
-    border: 1px solid transparent;
-    display: inline-block;
-    cursor: pointer;
-    background: none;
-    transform: .3s ease all;
+    border       : 1px solid transparent;
+    display      : inline-block;
+    cursor       : pointer;
+    background   : none;
+    transform    : .3s ease all;
 }
 
 .menu-yweb .contenedor-botones-menu button:hover {
@@ -445,50 +445,105 @@ main article {
 }
 
 .menu-yweb .contenedor-enlaces-nav {
-    display: flex;
+    display        : flex;
     justify-content: space-between;
-    align-items: center;
+    align-items    : center;
 }
 
-.menu-yweb .btn-loquehacemos{
-    color: var(--dark);
-    padding: 7px;
+.menu-yweb .btn-loquehacemos {
+    color        : var(--dark);
+    padding      : 7px;
     border-radius: 3px;
-    display: flex;
-    align-items: flex-end;
-    border: 1px solid transparent;
-    cursor: default;
+    display      : flex;
+    align-items  : flex-end;
+    border       : 1px solid transparent;
+    cursor       : default;
 }
 
-.menu-yweb .btn-loquehacemos:hover{
+.menu-yweb .btn-loquehacemos:hover {
     border: 1px solid rgba(255, 255, 255, .50)
 }
 
-.menu-yweb .btn-loquehacemos i{
+.menu-yweb .btn-loquehacemos i {
     margin-left: 20px;
-    position: relative;
-    bottom: 3px;
+    position   : relative;
+    bottom     : 3px;
 }
 
-.menu-yweb .btn-loquehacemos .logo-menu{
+.menu-yweb .btn-loquehacemos .logo-menu {
     margin-right: 10px;
 }
 
-.menu-yweb .btn-loquehacemos span{
-    display: block;
-    font-size: 1rem;
+.menu-yweb .btn-loquehacemos span {
+    display    : block;
+    font-size  : 1rem;
     font-weight: 600;
 }
 
 .menu-yweb .contenedor-enlaces-nav .enlaces a {
-    color: var(--dark);
-    padding: 7px;
+    color          : var(--dark);
+    padding        : 7px;
     text-decoration: none;
 }
 
 .menu-yweb .contenedor-enlaces-nav .enlaces a:hover {
     color: var(--naranja);
 }
+
+/* --------- grid --------- */
+
+.contenedor-grid {
+    position: relative;
+}
+
+.grid {
+    width                : 100%;
+    position             : absolute;
+    top                  : 5px;
+    z-index              : 1000;
+    display              : grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows   : 1fr;
+    grid-template-areas  : "categorias subcategorias subcategorias subcategorias";
+}
+
+.grid .activo {
+    display: grid;
+}
+
+.grid::before {
+    content      : "";
+    display      : block;
+    background   : transparent;
+    border-left  : 5px solid transparent;
+    border-right : 5px solid transparent;
+    border-bottom: 5px solid var(--blanco);
+    position     : absolute;
+    top          : -5px;
+    left         : 65px;
+}
+
+.grid>div {
+    background: var(--blanco);
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, .10);
+}
+
+.grid .btn-regresar {
+    background     : var(--primario);
+    border         : none;
+    border-radius  : 0.3em;
+    padding        : 0.7em 1.2em;
+    color          : var(--blanco);
+    margin-right   : 1.2em;
+    cursor         : pointer;
+    text-decoration: none;
+    transition     : .3s ease all;
+    font-size      : 1em;
+    font-weight    : 500;
+    margin         : 20px;
+}
+
+/* --------- fin grid --------- */
 
 /* --------- fin yweb --------- */
 
