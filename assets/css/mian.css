@@ -483,11 +483,14 @@ main article {
 .menu-yweb .contenedor-enlaces-nav .enlaces a {
     color          : var(--dark);
     padding        : 7px;
+    border-radius  : 3px;
+    border         : 1px solid transparent;
     text-decoration: none;
 }
 
 .menu-yweb .contenedor-enlaces-nav .enlaces a:hover {
-    color: var(--naranja);
+    color : var(--naranja);
+    border: 1px solid rgba(255, 137, 53, .50);
 }
 
 /* --------- grid --------- */
@@ -498,16 +501,16 @@ main article {
 
 .grid {
     width                : 100%;
+    display              : none;
     position             : absolute;
     top                  : 5px;
     z-index              : 1000;
-    display              : grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows   : 1fr;
     grid-template-areas  : "categorias subcategorias subcategorias subcategorias";
 }
 
-.grid .activo {
+.grid.activo {
     display: grid;
 }
 
@@ -554,6 +557,7 @@ main article {
     grid-area  : categorias;
     padding-top: 10px;
     min-height : 300px;
+    overflow   : auto;
 }
 
 .grid .categorias .subtitulo {
@@ -587,10 +591,10 @@ main article {
 }
 
 .grid .subcategoria {
-    display: none;
+    display              : none;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    height: 100%;
+    grid-template-rows   : 1fr;
+    height               : 100%;
 }
 
 .grid .subcategoria.activo {
@@ -598,12 +602,51 @@ main article {
 }
 
 .grid .subcategoria img {
-    width: 100%;
+    width         : 100%;
     vertical-align: top;
-    height: 100%;
-    object-fit: cover;
+    height        : 100%;
+    object-fit    : cover;
 }
 
+.grid .enlaces-subcategoria {
+    padding-top: 10px;
+    height     : 100%;
+    max-height : 300px;
+    overflow   : auto;
+}
+
+.grid .enlaces-subcategoria a {
+    color          : var(--dark);
+    display        : block;
+    padding        : 10px 20px;
+    text-decoration: none;
+}
+
+.grid .enlaces-subcategoria a:hover {
+    color: var(--naranja);
+}
+
+.grid .subtitulo {
+    color    : var(--naranja);
+    font-size: 1.125em;
+    padding  : 10px 20px;
+}
+
+.grid .banner-subcategoria a {
+    display: block;
+    height : 100%;
+}
+
+.grid .galeria-subcategoria {
+    display      : flex;
+    flex-wrap    : wrap;
+    align-content: start;
+}
+
+.grid .galeria-subcategoria a {
+    width : 50%;
+    height: 50%;
+}
 
 /* --------- fin grid --------- */
 
