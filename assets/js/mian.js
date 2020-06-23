@@ -1,3 +1,5 @@
+// filtro  index
+
 filterSelection("todos")
 function filterSelection(c) {
   var x, i;
