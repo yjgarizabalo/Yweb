@@ -284,6 +284,7 @@ header nav a.activo {
     font-size    : 1.2em;
     line-height  : 1.57em;
     margin-bottom: 1em;
+    text-align: justify;
 }
 
 .perfil .flex-perfil {
@@ -293,7 +294,12 @@ header nav a.activo {
 
 .perfil .item-perfil {
     width      : 100%;
-    align-items: center;
+    display: flex;
+    margin-right: 50px;
+}
+
+.perfil .subitem-perfil {
+    margin-right: 10px;
 }
 
 /* --------- fin perfil --------- */
