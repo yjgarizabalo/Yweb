@@ -2,148 +2,104 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- iconos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 
-    <!-- favicon -->
-    <link rel="icon" href="./assets/img/favicon-yjgar.png" type="image/png" sizes="20x20">
-
-    <!-- titulo -->
-
-    <title>YJGR | Bienvenidos</title>
     <!-- css -->
-    <link rel="stylesheet" href="./assets/css/mian.css">
-    <meta name="Description" content="Desarollo web Barranquilla | Desarollo sitios Web  Barranquilla | Desarollo de paginas wed Barranquilla |diseño web Barranquilla | Ecommerce Barranquilla | Comercio Electronico Barranquilla | Tienda Virtual Barranquilla |">
+    <link rel="stylesheet" href="/src/public/css/main.css">
 
-    <!-- og -->
-    <meta property="og:title" content="YJGR | Portafolio Web" />
-    <meta property="og:type" content="yjgr.neocites.org" />
-    <meta property="og:url" content="https://yjgr.neocities.org/" />
-    <meta property="og:description" content="Desarollo web en Barranquilla" />   
-    <meta property="og:image" content="https://yjgr.neocities.org/assets/img/og-yjgr.png" />
-
-    <!-- google analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169899232-1"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-169899232-1');
-    </script>
-
-    <!-- google search console -->
-    <meta name="google-site-verification" content="WIafM6Vax71PGk66p-evz0-DC9qWz5shvqQeLyMAEwg" />
-
+    <title>Yweb</title>
 </head>
 <body>
-    <header>
-        <div class="contenedor">
-            <nav class="social-yjgr">
-                <a href="#"><h2 class="logo-yjgr" target="_blank" title="Yair Garizabalo">YJGR</h2></a>
-                <a href="https://github.com/yjgarizabalo" target="_blank" class="social-icon" title="yjgarizabalo"><i class="icon-github fa-fw"></i></a>
-                <a href="https://twitter.com/YairG77" target="_blank" class="social-icon" title="@YairG77"><i class="icon-twitter fa-fw"></i></a>
-                <a href="https://wa.me/573015595408?text=Me%20interesa%20tu%20trabajo%20que%20" target="_blank" class="social-icon"  title="3015595408"><i class="icon-whatsapp"></i></a>
-            </nav>
+    <!-- header -->
+    <header class="header">
+        <nav class="nav bd-container">
+            <a href="#" class="nav__logo"><img src="/src/public/img/logo-yweb.svg" alt="logo-yweb"></a>
 
-            <nav>
-                <a href="#inicio" title="Inicio">Inicio</a>
-                <a href="#perfil" title="Perfil">Perfil</a>
-                <a href="#portafolio" title="Portafolio">Portafolio</a>
-                <a href="/yweb.html" target="_blank" title="Desarollo web">Yweb</a>
-                <a href="http://perfildev.com/" title="Perfildev" target="_blank">Starup</a>
-            </nav>
-        </div>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#" class="nav__link">Perfil</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Portafolio</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Starup</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
     </header>
+    <!-- main -->
+    <main class="main">
+        <div class="swiper-container gallery-top">
+            <div class="swiper-wrapper">
+                <!-- portafolio 1-->
+                <section class="portafolio">
+                    <img src="./src/public/img/portafolio-1.jpg" alt="" class="portafolio__bg">
 
-    <main>
-        <!-- hero -->
-        <div class="hero" id="inicio">
-            <div class="contenedor">
-                <div class="grid-contenedor">
-                    <h3 class="titulo-hero">Yair José <br> Garizabalo R. 👨‍💻</h3>
-                    <p class="descripcion">Analista y desarrollador de sistemas de informacion (Software)</p>
-                    <p class="frase">"El verdadero progreso es el que pone la tecnologia al alcance de todos" -Henry Ford</p>
-                    <a href="./assets/doc/hv Yair Garizabalo Rodriguez.pdf" download class="btn-primario">Descargar Hojá de vida 🚀</a>
-                    <a href="#holamundo" class="btn-primario">¡Hola mundo! 🌎</a>
-                </div>
-            </div>
-        </div>
-        <!-- fin hero -->
-
-        <!-- perfil -->
-        <div class="perfil" id="perfil">
-            <div class="contenedor">
-                <div class="flex-perfil">
-                    <div class="item-perfil"></div>
-                    <div class="item-perfil">
-                        <h3 class="titulo-perfil">Perfil</h3>
-                        <p class="descripcion-perfil">Analista de sistemas Barranquillero apasionado por el desarrollo web y móvil,
-                            metodologías agiles y negocios inteligentes con experiencia, en desarrollo web a la
-                            medida, desarrollo web con CMS, emprendimiento tecnológico y cultural, buscando
-                            incentivar a las nuevas generaciones a no perder su cultura y la historia de la ciudad
-                            por medio de la tecnología e investigación.
-                        </p>
+                    <div class="portafolio__container bd-container">
+                        <div class="portafolio__data">
+                           <h2 class="portafolio__subtitle">Yair José</h2>
+                           <h1 class="portafolio__title">Garizabalo</h1>
+                           <p class="portafolio__description">Analista y desarrollador de sistemas de informacion (Software)</p>
+                           <a href="#" class="portafolio__button">Hojá de vida <i class='bx bx-right-arrow-alt portafolio__button-icon'></i></a> 
+                        </div>
+                        
+                        <div class="portafolio__video">
+                            <div class="portafolio__video-content">
+                                <i class='bx bx-play-circle portafolio__video-icon' ></i>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <!-- fin perfil -->
-
-        <!-- portafolio -->
-        <div class="portafolio" id="portafolio">
-            <div class="contenedor">
-                <h3 class="titulo-portafolio">Portafolio</h3>
-                <div id="myBtnContainer">
-                    <button class="btn-portafolio active" onclick="filterSelection('todos')"> Mostrar todos</button>
-                    <button class="btn-portafolio" onclick="filterSelection('informativos')"> Iniformativos</button>
-                    <button class="btn-portafolio" onclick="filterSelection('ecommerce')"> Ecommerce</button>
-                    <button class="btn-portafolio" onclick="filterSelection('nativos')"> Nativos</button>
-                </div>
-                <div class="contenedor-portafolio">
-                    <div class="flex-portafolio">
-                        <a href="http://hazlousa.hazlo.org/" style="background: linear-gradient(rgba(40, 1, 68, .50) 0%, rgba(40, 1, 68, .50) 100%), url(./assets/img/pro_hazlousa.jpg); background-position: center center; background-size  : cover;" class="filterDiv informativos" target="_blank">Hazlo Usa</a>
-                        <!-- <a href="https://alexyasser.com/" class="filterDiv informativos" target="_blank">Alex Yasser</a> -->
-                        <a href="http://dolmenusa.com/" style="background: linear-gradient(rgba(40, 1, 68, .50) 0%, rgba(40, 1, 68, .50) 100%), url(./assets/img/pro_dolmenusa.jpg); background-position: center center; background-size  : cover;" class="filterDiv informativos" target="_blank">Dolmen Usa</a>
-                        <!-- <a href="https://www.sphere-lng.com/" class="filterDiv informativos" target="_blank">Sphere Energy</a> -->
-                        <!-- <a href="https://inhomegroup.net/" class="filterDiv informativos" target="_blank">InHome Group</a> -->
-                        <a href="https://controlt.com.co/" style="background: linear-gradient(rgba(40, 1, 68, .50) 0%, rgba(40, 1, 68, .50) 100%), url(./assets/img/pro_controlt.jpg); background-position: center center; background-size  : cover;" class="filterDiv informativos" target="_blank">ControlT</a>
-                        <a href="https://grupoeurosystem.com/" style="background: linear-gradient(rgba(40, 1, 68, .50) 0%, rgba(40, 1, 68, .50) 100%), url(./assets/img/pro_eurosystem.jpg); background-position: center center; background-size  : cover;" class="filterDiv informativos" target="_blank">Grupo Eurosystem</a>
-                        <a href="https://syd.com.co/" style="background: linear-gradient(rgba(40, 1, 68, .50) 0%, rgba(40, 1, 68, .50) 100%), url(./assets/img/pro_syd.jpg); background-position: center center; background-size  : cover;" class="filterDiv informativos" target="_blank">SYD</a>
-                        <a href="http://igo-sas.com.co/" style="background: linear-gradient(rgba(40, 1, 68, .50) 0%, rgba(40, 1, 68, .50) 100%), url(./assets/img/pro_igo.jpg); background-position: center center; background-size  : cover;" class="filterDiv informativos" target="_blank">Igo</a>
-                        <!-- <a href="https://contrologired.com/" class="filterDiv informativos" target="_blank">Control Logired</a> -->
-                        <a href="https://corp.recursoconfiable.com/" style="background: linear-gradient(rgba(40, 1, 68, .50) 0%, rgba(40, 1, 68, .50) 100%), url(./assets/img/pro_recursos.jpg); background-position: center center; background-size  : cover;" class="filterDiv informativos" target="_blank">Recurso Confiable</a>
-                        <a href="https://www.todomono.com/tienda-mono/" style="background: linear-gradient(rgba(40, 1, 68, .50) 0%, rgba(40, 1, 68, .50) 100%), url(./assets/img/pro_todomono.jpg); background-position: center center; background-size  : cover;" class="filterDiv ecommerce" target="_blank">Tienda Todomono</a>
-                        <a href="http://multillantascolombia.com/" style="background: linear-gradient(rgba(40, 1, 68, .50) 0%, rgba(40, 1, 68, .50) 100%), url(./assets/img/pro_multillantas.jpg); background-position: center center; background-size  : cover;" class="filterDiv ecommerce" target="_blank">Multillantas Colombia</a>
-                        <a href="https://mamelook.co/" style="background: linear-gradient(rgba(40, 1, 68, .50) 0%, rgba(40, 1, 68, .50) 100%), url(./assets/img/pro_mamelook.jpg); background-position: center center; background-size  : cover;" class="filterDiv ecommerce" target="_blank">Mamelook</a>
-                        <a href="http://www.mutla.co/" style="background: linear-gradient(rgba(40, 1, 68, .50) 0%, rgba(40, 1, 68, .50) 100%), url(./assets/img/pro_mutla.jpg); background-position: center center; background-size  : cover;" class="filterDiv nativos" target="_blank">Mutla</a>
-                        <a href="https://perfildev.com/" style="background: linear-gradient(rgba(40, 1, 68, .50) 0%, rgba(40, 1, 68, .50) 100%), url(./assets/img/pro_perfildev.jpg); background-position: center center; background-size  : cover;" class="filterDiv nativos" target="_blank">Perfildev</a>
+                </section>
+                <!-- portafolio 2-->
+                <section class="portafolio">
+                    <img src="./src/public/img/portafolio-1.jpg" alt="" class="portafolio__bg">
+                    
+                    <div class="portafolio__container bd-container">
+                        <div class="portafolio__data">
+                           <h2 class="portafolio__subtitle">Yair</h2>
+                           <h1 class="portafolio__title">Garizabalo R.</h1>
+                           <p class="portafolio__description">Analista y desarrollador de sistemas de informacion (Software)</p>
+                           <a href="" class="portafolio__button">Hojá de vida <i class='bx bx-right-arrow-alt portafolio__button-icon'></i></a> 
+                        </div>
+                        
+                        <div class="portafolio__video">
+                            <div class="portafolio__video-content">
+                                <i class='bx bx-play-circle portafolio__video-icon' ></i>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <!-- fin portafolio -->
-
-        <!-- hola mundo -->
-        <div class="holamundo" id="holamundo">
-            <div class="contenedor">
-                <div class="flex-holamundo">
-                    <div class="item-holamundo">
-                        <h3 class="titulo-holamundo">¡Hola mundo! 🌎</h3>
-                        <p class="descripcion-holamundo">Es la tradicion mas bonita de los desarrolladores,  un "Hola Mundo" basicamente se trata de un pedazo de codigo que no hace nada, pero inspira a seguir programando.</p>
+                </section>
+                <!-- portafolio 3-->
+                <section class="portafolio">
+                    <img src="./src/public/img/portafolio-1.jpg" alt="" class="portafolio__bg">
+                    
+                    <div class="portafolio__container bd-container">
+                        <div class="portafolio__data">
+                           <h2 class="portafolio__subtitle">Yair</h2>
+                           <h1 class="portafolio__title">Garizabalo R.</h1>
+                           <p class="portafolio__description">Analista y desarrollador de sistemas de informacion (Software)</p>
+                           <a href="" class="portafolio__button">Hojá de vida <i class='bx bx-right-arrow-alt portafolio__button-icon'></i></a> 
+                        </div>
+                        
+                        <div class="portafolio__video">
+                            <div class="portafolio__video-content">
+                                <i class='bx bx-play-circle portafolio__video-icon' ></i>
+                            </div>
+                        </div>
                     </div>
-                    <div class="item-holamundo"></div>
-                </div>
+                </section>
             </div>
         </div>
-        <!-- fin hola mundo -->
     </main>
-
-    <footer>
-        <div class="footer">
-            <p>© Copyrigth 2020 YJGR | Portafolio Web</p>
-        </div>
-    </footer>
-
-    <script src="./assets/js/mian.js"></script>
+    <!-- gsap -->
+    <script src=""></script>
+    <!-- swper js -->
+    <script src=""></script>
+    <!-- main js -->
+    <script src="/src/public/js/main.js"></script>
 </body>
 </html>
