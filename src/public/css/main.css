@@ -1,254 +1,43 @@
-/* google fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700;900&display=swap');
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700;800;900&display=swap');
 
-/* variables css */
+/* VARIABLES CSS */
+
 :root {
-    --header-height: 3rem;
-
-    /* colores */
-    --primero: #6602ED;
-    --segundo: #2802F7;
-    --tercero: #0922E0;
-    --cuarto: #025FF7;
-    --quinto: #0299ED;
-    --oscuro: #111111;
-    --fondo: #efefef;
-    --gris: #e7e8e7;
-    --blanco: #ffffff;
-    --negro: #000000;
-
-    /* tipografia */
+    --header-height: 3.5rem;
+    --nav-width: 219px;
+    
+    /*========== Colors ==========*/
+    --first-color-light: #F4F0FA;
+    --title-color: #19181B;
+    --text-color: #58555E;
+    --text-color-light: #A5A1AA;
+    --body-color: #F9F6FD;
+    --container-color: #FFFFFF;
+    --primary: #0F0812;
+    --secundary: #2A1633;
+    --tree: #130A17;
+    -four: #391E45;
+    -five: #8848A3;
+    --white: #fff;
+    --dark: #1c1c1c;
+    --background: #0B0D17;
+    
+    /*========== Font and typography ==========*/
     --body-font: 'Poppins', sans-serif;
-    /* --body-font: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji; */
-    --biggest-font-size: 3rem;
-    --big-font-size: 1.25rem;
     --normal-font-size: .938rem;
-
-    /* font-weight */
+    --small-font-size: .75rem;
+    --smaller-font-size: .75rem;
+    
+    /*========== Font weight ==========*/
     --font-medium: 500;
     --font-semi-bold: 600;
-
-    /* z index */
-    --z-tooltip: 10;
+    
+    /*========== z index ==========*/
     --z-fixed: 100;
 }
 
-@media screen and (min-width: 1024px) {
-    :root {
-        --biggest-font-size: 5.5rem;
-        --big-font-size: 2rem;
-        --normal-font-size: 1rem;
-    }
-}
-
-/* base */
-*, ::before, ::after{
-    box-sizing: border-box;
-}
 
 body {
-    margin: 0;
     font-family: var(--body-font);
-    font-size: var(--normal-font-size);
-    background-color: var(--blanco);
-    color: var(--oscuro)
-}
-
-h1,h2,ul,p{
-    margin: 0;
-}
-
-ul{
-    padding: 0;
-    list-style: none;
-}
-
-a{
-    text-decoration: none;
-}
-
-img{
-    max-width: 100%;
-    height: auto;
-}
-
-/* layout */
-
-.main {
-    position: relative;
-}
-
-.bd-container {
-    max-width: 968px;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-}
-
-/* header */
-.header {
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: var(--z-fixed);
-}
-
-/* nav */
-.nav {
-    max-width: 968px;
-    height: var(--header-height);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-  
-@media screen and (max-width: 768px) {
-    .nav__menu {
-        position: fixed;
-        top: -100%;
-        left: 0;
-        right: 0;
-        width: 90%;
-        margin: 0 auto;
-        text-align: center;
-        padding-top: 1.5rem;
-        background-color: var(--gris);
-        border-radius: 1rem;
-        transition: .4s;
-    }
-}
-  
-.nav__logo {
-    width: 77px;
-}
-
-.nav__toggle {
-    color: var(--oscuro);
-}
-
-.nav__link {
-    color: var(--oscuro);
-    font-weight: var(--font-medium);
-}
-
-.nav__item {
-    margin-bottom: 1.5rem;
-}
-
-.nav__toggle {
-    font-size: 1.2rem;
-    cursor: pointer;
-}
-
-/* Show menu */
-.show-menu {
-top: calc(var(--header-height) + 1rem);
-}
-
-/* Portafolio */
-.portafolio {
-  height: 100vh;
-  position: relative;
-}
-
-.portafolio__bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  object-fit: cover;
-  object-position: center;
-}
-
-.portafolio__container {
-  position: relative;
-  height: 100%;
-  display: grid;
-  grid-template-columns: 2fr .25fr;
-  align-content: center;
-}
-
-.portafolio__subtitle, .portafolio__title, .portafolio__description {
-  color: var(--oscuro);
-}
-
-.portafolio__subtitle {
-  font-size: var(--big-font-size);
-  font-weight: var(--font-medium);
-}
-
-.portafolio__title {
-  font-size: var(--biggest-font-size);
-}
-
-.portafolio__description {
-  margin-bottom: 1rem;
-}
-
-.portafolio__button {
-  display: inline-flex;
-  align-items: center;
-  padding: 1rem 1.5rem;
-  background-color: var(--primero);
-  color: var(--blanco);
-  border-radius: .5rem;
-  font-weight: var(--font-medium);
-}
-
-.portafolio__button:hover {
-  background-color: var(--segundo);
-}
-
-.portafolio__button-icon {
-  font-size: 1.5rem;
-  margin-left: .5rem;
-}
-
-.portafolio__video {
-  display: flex;
-  align-items: flex-end;
-  padding-bottom: .75rem;
-}
-
-.portafolio__video-content {
-  display: inline-flex;
-  padding: .15rem;
-  background-color: var(--gris);
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.portafolio__video-icon {
-  font-size: 1.8rem;
-  color: var(--oscuro);
-}
-
-.portafolio__popup {
-  display: none;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  background-color: var(--first-color-lighter);
-  padding: 1rem .75rem;
-  border-radius: 1rem;
-}
-
-.portafolio__popup-close {
-  position: absolute;
-  top: -.75rem;
-  right: -.75rem;
-  display: inline-flex;
-  padding: .35rem;
-  background-color: var(--first-color);
-  color: var(--first-color-lighter);
-  font-size: 1.2rem;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-/* Show popup*/
-.show-popup {
-  display: block;
 }
