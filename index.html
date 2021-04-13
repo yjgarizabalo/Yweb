@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,11 +13,83 @@
 <body>
     <!-- HEADER -->
     <header class="header">
+        <!-- LOGO -->
+        <div class="header__container">
+            <img src="./src/public/img/favicon-yweb.png" alt="logo Yweb" class="header__img">
+            <a href="#" ><img class="header__logo" src="./src/public/img/yweb.svg" alt="logo Yweb" height="35px"></a>
 
+            <!-- TOGGLE -->
+            <div class="header__toggle">
+                <i class='bx bx-menu' id="header-toggle"></i>
+            </div>
+        </div>
     </header>
     <!-- NAV -->
+    <nav class="nav" id="navbar">
+        <nav class="nav__container">
+            <div>
+                <a href="#" class="nav__link nav__logo">
+                    <i class='bx bx-git-commit nav__icon'></i>
+                    <span class="nav__logo-name">Yweb</span>
+                </a>
+
+                <div class="nav__list">
+                    <div class="nav__items">
+                        <h3 class="nav__subtitle">Potafolio</h3>
+
+                        <a href="#" class="nav__link">
+                            <i class='bx bx-user nav__icon'></i>
+                            <span class="nav__name">Perfil</span>
+                        </a>
+
+                        <a href="#" class="nav__link">
+                            <i class='bx bx-navigation nav__icon' ></i>
+                            <span class="nav__name">Proyectos</span>
+                        </a>
+
+                        <a href="#" class="nav__link">
+                            <i class='bx bx-world nav__icon' ></i>
+                            <span class="nav__name">¡Hola mundo!</span>
+                        </a>
+                    </div>
+
+                    <div class="nav__items">
+                        <h3 class="nav__subtitle">Destacado</h3>
+
+                        <div class="nav__dropdown">
+                            <a href="#" class="nav__link">
+                                <i class='bx bx-star nav__icon'></i>
+                                <span class="nav__name">Proyectos</span>
+                                <i class="bx bx-chevron-down nav__icon nav__dropdown-icon"></i>
+                            </a>
+                            
+                            <div class="nav__dropdown-collapse">
+                                <div class="nav__dropdown-content">
+                                    <a href="#" class="nav__dropdown-item">Proyecto #1</a>
+                                    <a href="#" class="nav__dropdown-item">Proyecto #2</a>
+                                    <a href="#" class="nav__dropdown-item">Proyecto #3</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="nav__list">
+                <a href="#" class="nav__link">
+                    <i class='bx bxl-github nav__icon' ></i>
+                    <span class="nav__name">Github</span>
+                </a>
+                <a href="#" class="nav__link ">
+                    <i class='bx bxl-twitter nav__icon'></i>
+                    <span class="nav__name">Twitter</span>
+                </a>
+            </div>
+        </nav>
+    </nav>
     <!-- CONTENTS -->
-    <main class="main"></main>
+    <main class="main">
+    </main>
     <footer class="footer"></footer>
 
     <!-- MAIN JS -->
