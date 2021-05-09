@@ -314,6 +314,11 @@ img {
     color: var(--text-color);
 }
 
+.hero__yweb .btn__hero:hover {
+    background: var(--four);
+    transition: .3s;
+}
+
 /* ========== MEDIA QUERIES ==========*/
 /* For small devices reduce search*/
   
