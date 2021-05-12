@@ -75,6 +75,27 @@ img {
     height: auto;
 }
 
+.yweb__title {
+    font-size: 2.8rem;
+    line-height: 1;
+}
+
+.yweb__description {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.yweb__subtitle {
+    font-size: 1.8rem;
+    line-height: 1;
+}
+
+.yweb__subdescription {
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+
 /* HEADER */
 
 .header {
@@ -286,36 +307,18 @@ img {
 
 .hero__yweb .item__hero {
     margin: auto;
+    position: relative;
 }
 
 
 .hero__yweb .hero__img {
     width: 400px;
-    height: 250px;
+    height: auto;
     border-radius: 8px;
     box-shadow: 0 1px 1px 0 rgb(0 0 0 / 10%);
-    margin: 35px 0;
 }
 
-.hero__yweb .hero__img:hover {
-    filter: saturate(170%);
-    transition: .3s;
-}
 
-.hero__yweb .hero__title {
-    font-size: 3rem;
-    line-height: 1;
-}
-
-.hero__yweb .description__hero {
-    font-size: 1rem;
-    font-weight: 400;
-}
-
-.hero__yweb .description__hero {
-    font-size: 1rem;
-    font-weight: 400;
-}
 
 .hero__yweb .btn__hero {
     position: relative;
@@ -338,15 +341,6 @@ img {
     margin: 100px 0;
 }
 
-.servicio__yweb .servicio__title {
-    font-size: 2rem;
-    line-height: 1;
-}
-
-.servicio__yweb .servicio__description {
-    font-size: 0.8rem;
-    font-weight: 400;
-}
 
 .servicio__yweb .item__servicio {
     display: grid;
@@ -389,7 +383,7 @@ img {
     margin: auto;
 }
 
-.nosotros__yweb .item__nosotros .nosotros__title {
+.nosotros__yweb .item__nosotros .yweb__subtitle {
     font-size: 2rem;
     line-height: 1;
 }
@@ -401,7 +395,7 @@ img {
 
 .nosotros__yweb .item__nosotros .nosotros__img {
     width: 400px;
-    height: 250px;
+    height: auto;
     border-radius: 8px;
     box-shadow: 0 1px 1px 0 rgb(0 0 0 / 10%);
     margin: 35px 0;
@@ -486,15 +480,16 @@ img {
         margin: 50px 0;
         grid-template-columns: repeat(1, 1fr);
     }
-    .hero__yweb .hero__img {
-        width: 400px;
-        height: 250px;
-    }
+    
     .servicio__yweb .item__servicio {
         margin: 50px 0;
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .nosotros__yweb .item__nosotros {
+        margin: 50px 0;
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 /* X-Small devices (portrait phones, less than 576px) */
@@ -503,17 +498,32 @@ img {
         width: auto;
         height: auto;
     }
+
     .servicio__yweb .item__servicio {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .hero__yweb .hero__title {
+    .hero__yweb .yweb__title {
         font-size: 2.5rem;
         line-height: 1;
     }
 
-    .servicio__yweb .servicio__title {
+    .servicio__yweb .yweb__subtitle {
         font-size: 1.5rem;
         line-height: 1;
     }
+
+    .nosotros__yweb .item__nosotros {
+        margin: 50px 0;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .nosotros__yweb .item__nosotros .nosotros__img {
+        width: auto;
+        height: auto;
+    }
+
+
+
+
 }
