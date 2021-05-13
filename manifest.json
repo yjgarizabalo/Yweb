@@ -3,14 +3,16 @@
     "name": "Yweb: Desarrollo web Barranquilla - Fografia y produccion audio visual",
     "icons": [
         {
-          "src": "/",
-          "type": "https://raw.githubusercontent.com/yjgarizabalo/Yweb/master/src/public/img/yweb__icon.png",
-          "sizes": "192x192"
+          "src": "https://raw.githubusercontent.com/yjgarizabalo/Yweb/master/src/public/img/yweb__icon.png",
+          "type": "image/png",
+          "sizes": "192x192",
+          "purpose": "any maskable"
         },
         {
           "src": "https://raw.githubusercontent.com/yjgarizabalo/Yweb/master/src/public/img/yweb__icon.png",
           "type": "image/png",
-          "sizes": "512x512"
+          "sizes": "512x512",
+          "purpose": "any maskable"
         }
     ],
 
