@@ -28,8 +28,8 @@
           "icons": [{ "src": "https://raw.githubusercontent.com/yjgarizabalo/Yweb/master/src/public/img/yweb__icon.png", "sizes": "192x192" }]
         },
         {
-          "name": "How's weather tomorrow?",
-          "short_name": "Tomorrow",
+          "name": "Desarro y diseño de paginas web",
+          "short_name": "Yweb",
           "description": "Agencia de desarrollo web Barranquilla",
           "url": "/?source=pwa",
           "icons": [{ "src": "https://raw.githubusercontent.com/yjgarizabalo/Yweb/master/src/public/img/yweb__icon.png", "sizes": "192x192" }]
@@ -38,12 +38,12 @@
       "description": "Agencia de desarrollo web Barranquilla",
       "screenshots": [
         {
-          "src": "/images/screenshot1.png",
+          "src": "https://github.com/yjgarizabalo/Yweb/blob/master/src/public/img/Yweb__screenshot.png?raw=true",
           "type": "image/png",
           "sizes": "540x720"
         },
         {
-          "src": "/images/screenshot2.jpg",
+          "src": "https://github.com/yjgarizabalo/Yweb/blob/master/src/public/img/Yweb__screenshot.png?raw=true",
           "type": "image/jpg",
           "sizes": "540x720"
         }
