@@ -4,11 +4,11 @@
     "icons": [
         {
           "src": "/",
-          "type": "image/png",
+          "type": "https://raw.githubusercontent.com/yjgarizabalo/Yweb/master/src/public/img/yweb__icon.png",
           "sizes": "192x192"
         },
         {
-          "src": "/images/icons-512.png",
+          "src": "https://raw.githubusercontent.com/yjgarizabalo/Yweb/master/src/public/img/yweb__icon.png",
           "type": "image/png",
           "sizes": "512x512"
         }
@@ -23,19 +23,19 @@
         {
           "name": "Desrrollo web Barranquilla",
           "short_name": "yweb",
-          "description": "View weather information for today",
-          "url": "/today?source=pwa",
-          "icons": [{ "src": "/images/today.png", "sizes": "192x192" }]
+          "description": "Agencia de Desarrollo Web en Barranquilla",
+          "url": "/?source=pwa",
+          "icons": [{ "src": "https://raw.githubusercontent.com/yjgarizabalo/Yweb/master/src/public/img/yweb__icon.png", "sizes": "192x192" }]
         },
         {
           "name": "How's weather tomorrow?",
           "short_name": "Tomorrow",
-          "description": "View weather information for tomorrow",
-          "url": "/tomorrow?source=pwa",
-          "icons": [{ "src": "/images/tomorrow.png", "sizes": "192x192" }]
+          "description": "Agencia de desarrollo web Barranquilla",
+          "url": "/?source=pwa",
+          "icons": [{ "src": "https://raw.githubusercontent.com/yjgarizabalo/Yweb/master/src/public/img/yweb__icon.png", "sizes": "192x192" }]
         }
       ],
-      "description": "Weather forecast information",
+      "description": "Agencia de desarrollo web Barranquilla",
       "screenshots": [
         {
           "src": "/images/screenshot1.png",
