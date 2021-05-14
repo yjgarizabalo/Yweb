@@ -4,7 +4,8 @@
   "description": "Analista de sistemas Barranquillero apasionado por el desarrollo web y móvil, metodologías agiles y negocios inteligentes con experiencia, en desarrollo web a la medida, desarrollo web con CMS, emprendimiento tecnológico y cultural, buscando incentivar a las nuevas generaciones a no perder su cultura y la historia de la ciudad por medio de la tecnología e investigación.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node scr/index.js",
+    "dev": "nodemon src/index.js"
   },
   "repository": {
     "type": "git",
