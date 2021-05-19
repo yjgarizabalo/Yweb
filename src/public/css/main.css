@@ -405,7 +405,7 @@ img {
 
 
 .footer {
-    margin: 100px 0;
+    margin: 100px 0 30px 0;
 }
 
 .footer .item__footer {
@@ -413,6 +413,19 @@ img {
     grid-template-columns: repeat(4, 1fr);
     align-items: center;
     grid-gap: 1rem;
+}
+
+.footer .enlace__footer {
+    list-style: none;
+    line-height: 2.5;
+}
+
+.footer .enlace__footer a {
+    color: var(--text-color);
+}
+
+.footer__politicas-datos .footer__header a {
+    color: var(--text-color);
 }
 
 /* ========== MEDIA QUERIES ==========*/
