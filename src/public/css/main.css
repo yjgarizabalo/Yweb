@@ -403,6 +403,24 @@ img {
     margin: 35px 0;
 }
 
+/* PROYECTOS */
+
+.proyecto__yweb {
+    margin: 100px 0;
+}
+
+.item__proyectos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    grid-gap: 1rem;
+}
+
+.img__proyecto {
+    border-radius: 8px;
+}
+
+/* FOOTER */
 
 .footer {
     margin: 100px 0 30px 0;
@@ -515,6 +533,10 @@ img {
     .nosotros__yweb .item__nosotros {
         margin: 50px 0;
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .proyecto__yweb {
+        margin: 50px 0;
     }
 
     .footer {
