@@ -448,6 +448,21 @@ img {
     color: var(--text-color);
 }
 
+/* CONTACTO */
+
+.contacto {
+    margin: 100px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    align-items: center;
+}
+
+.contacto  .contacto__item ul {
+    list-style: none;
+    padding: 0;
+}
+
 /* ========== MEDIA QUERIES ==========*/
 /* For small devices reduce search*/
 
