@@ -460,7 +460,20 @@ img {
 
 .contacto  .contacto__item ul {
     list-style: none;
+    line-height: 2;
     padding: 0;
+}
+
+.contacto  .contacto__item li i {
+    font-size: 1.4rem;
+}
+
+
+.contacto .contacto__item ul a {
+    display: flex;
+    align-items: center;
+    color: var(--first-color-light);
+    font-weight: 600;
 }
 
 /* ========== MEDIA QUERIES ==========*/
