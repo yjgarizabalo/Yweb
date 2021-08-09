@@ -476,6 +476,56 @@ img {
     font-weight: 600;
 }
 
+.formulario__yweb {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.formulario__label {
+    display: block;
+    font-weight: 700;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.formulario__grupo-input {
+    position: relative;
+}
+
+.fomulario__input {
+    width: 100%;
+    background: var(--white);
+    border: 3px solid transparent;
+    border-radius: 8px;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 40px 0 10px;
+    transition: .3s ease all;
+}
+
+.fomulario__input:focus {
+    border: 3px solid var(--five);
+    outline: none;
+    box-shadow: 3px 0px 30px rgba(22, 8, 43, 0.1);
+}
+
+.formulario__input-error {
+    font-size: 12px;
+    margin-bottom: 0;
+    display: none;
+}
+
+.formulario__input-error-activo {
+    display: block;
+}
+
+.fomulario__validacion-estado {
+    position: absolute;
+    right: 10px;
+    bottom: 15px;
+}
+
 /* ========== MEDIA QUERIES ==========*/
 /* For small devices reduce search*/
 

@@ -14,7 +14,7 @@
                 <label for="nombre" class="formulario__label">Nombre</label>
                 <div class="formulario__grupo-input">
                     <input type="text" class="fomulario__input" name="nombre" id="nombre" placeholder="Joe">
-                    <i class='bx bxs-message-square-x fomulario__validacion-estado'></i>
+                    <i style="colornom: red" class='bx bxs-message-square-x fomulario__validacion-estado'></i>
                 </div>
                 <p class="formulario__input-error">El nombre puede ser de 3 a 16 digitos  y solo puede contener letras.</p>
             </div>
@@ -47,6 +47,22 @@
                     <i class='bx bxs-message-square-x fomulario__validacion-estado'></i>
                 </div>
                 <p class="formulario__input-error">El telefono solo puede contener numeros.</p>
+            </div>
+
+            {{!-- Grupo Telefono  --}}
+            <div class="formulario__grupo" id="grupo__terminos">
+                <label class="formulario__label">
+                    <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos"> Acepto terminos y condiciones
+                </label>
+            </div>
+
+            <div class="formulario__mensaje" id="mensaje__formulario">
+                <p><i class='bx bxs-message-square-error'></i> <b>Error:</b> Por favor rellene el formmulario correctamente.</p>
+            </div>
+
+            <div class="formulario__grupo formulario__grupo-btn-enviar">
+                <button type="submit" class="formulario__btn">Enviar</button>
+                <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario Enviado Exitosamente</p>
             </div>
         </form>
     </div>

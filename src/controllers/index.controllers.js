@@ -11,4 +11,8 @@ indexCtrl.renderContacto = (req, res) => {
     res.render('contacto')
 }
 
+indexCtrl.renderDesarrolloWebBarranquilla = (req, res) => {
+    res.render('desarrollo-web-barranquilla')
+}
+
 module.exports = indexCtrl
