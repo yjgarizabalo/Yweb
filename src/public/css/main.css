@@ -9,15 +9,15 @@
     
     /*========== Colors ==========*/
     --first-color-light: #F4F0FA;
-    --title-color: #F4F0FA;
-    --text-color: #FFFFFF;
+    --title-color: #232323;
+    --text-color: #232323;
     --text-color-light: #A5A1AA;
-    --body-color: #2A1633;
-    --container-color: #130A17;
+    --body-color: #EEEEEE;
+    --container-color: #5E5E5E;
     --primary: #0F0812;
     --secundary: #2A1633;
     --tree: #130A17;
-    --four: #391E45;
+    --four: #DEDEDE;
     --five: #8848A3;
     --white: #fff;
     --dark: #1c1c1c;
@@ -104,7 +104,7 @@ img {
     left: 0;
     width: 100%;
     background-color: var(--container-color);
-    box-shadow: 0 3px 0 rgba(22, 8, 43, 0.1);
+    box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
     padding: 0 1rem;
     z-index: var(--z-fixed);
 }
@@ -178,12 +178,12 @@ img {
     justify-content: space-between;
     padding-bottom: 2rem;
     overflow: auto;
-    scrollbar-width: none; /* For mozilla */
+    scrollbar-width: none; /* para mozilla */
 }
   
 
   
-/* For Google Chrome and others */
+/* Para Google Chrome y otros */
 .nav__container::-webkit-scrollbar {
     display: none;
 }
