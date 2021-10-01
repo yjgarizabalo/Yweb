@@ -9,16 +9,18 @@
     
     /*========== Colors ==========*/
     --first-color-light: #F4F0FA;
-    --title-color: #F4F0FA;
-    --text-color: #FFFFFF;
+    --title-color: #232323;
+    --text-color: #232323;
     --text-color-light: #A5A1AA;
-    --body-color: #2A1633;
-    --container-color: #130A17;
-    --primary: #0F0812;
+    --body-color: #EEEEEE;
+    --container-color: #5E5E5E;
+    --primary: #EDEDED;
     --secundary: #2A1633;
     --tree: #130A17;
-    --four: #391E45;
-    --five: #8848A3;
+    --four: #DEDEDE;
+    --five: #FF8000;
+    --six: #FF8020;
+    --seven: #130A17;
     --white: #fff;
     --dark: #1c1c1c;
     --background: #0B0D17;
@@ -103,8 +105,8 @@ img {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: var(--container-color);
-    box-shadow: 0 3px 0 rgba(22, 8, 43, 0.1);
+    background-color: var(--seven);
+    box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
     padding: 0 1rem;
     z-index: var(--z-fixed);
 }
@@ -178,12 +180,12 @@ img {
     justify-content: space-between;
     padding-bottom: 2rem;
     overflow: auto;
-    scrollbar-width: none; /* For mozilla */
+    scrollbar-width: none; /* para mozilla */
 }
   
 
   
-/* For Google Chrome and others */
+/* Para Google Chrome y otros */
 .nav__container::-webkit-scrollbar {
     display: none;
 }
@@ -326,12 +328,12 @@ img {
     line-height: 1;
     border-radius: 8px;
     padding: 17px;
-    background: var(--five);
-    color: var(--text-color);
+    background: var(--seven);
+    color: var(--five);
 }
 
 .hero__yweb .btn__hero:hover {
-    background: var(--four);
+    background: var(--secundary);
     transition: .3s;
 }
 
@@ -358,7 +360,7 @@ img {
 }
 
 .servicio__yweb .card__servicio:hover {
-    background-color: var(--four);
+    background-color: var(--six);
     transition: .3s;
 }
 
