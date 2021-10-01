@@ -354,13 +354,13 @@ img {
 .servicio__yweb .card__servicio {
     padding: 15px 15px;
     color: var(--text-color);
-    background-color: var(--five);
+    background-color: var(--four);
     border-radius: 8px;
     box-shadow: 0 1px 1px 0 rgb(0 0 0 / 10%);
 }
 
 .servicio__yweb .card__servicio:hover {
-    background-color: var(--six);
+    background-color: var(--text-color-light);
     transition: .3s;
 }
 
