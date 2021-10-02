@@ -125,7 +125,7 @@ img {
 }
 
 .header__logo {
-    width: auto;
+    width: auto auto;
     height: 35px;
     display: none;
 }
@@ -152,11 +152,11 @@ img {
 .header__icon, 
 .header__toggle {
     font-size: 1.2rem;
-    color: var(--primary)
+    color: var(--white)
 }
 
 .header__toggle {
-    color: var(--title-color);
+    color: var(--white);
     cursor: pointer;
 }
 
