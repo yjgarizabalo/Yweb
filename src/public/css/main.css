@@ -329,11 +329,12 @@ img {
     border-radius: 8px;
     padding: 17px;
     background: var(--seven);
-    color: var(--five);
+    color: var(--white);
 }
 
 .hero__yweb .btn__hero:hover {
     background: var(--secundary);
+    color: var(--five);
     transition: .3s;
 }
 
@@ -360,7 +361,8 @@ img {
 }
 
 .servicio__yweb .card__servicio:hover {
-    background-color: var(--text-color-light);
+    background-color: var(--body-color);
+    color: var(--five);
     transition: .3s;
 }
 
