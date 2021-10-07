@@ -519,6 +519,37 @@ img {
     bottom: 15px;
 }
 
+/* BOTON DE WHATSAPP */
+
+.float {
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius: 8px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+    z-index:100;
+}
+
+.float .bx {
+    font-size: 2.7rem
+}
+
+
+.float:hover {
+	text-decoration: none;
+	color: #25d366;
+    background-color:#fff;
+}
+
+.my-float{
+	margin-top:10px;
+}
+
 /* ========== MEDIA QUERIES ==========*/
 /* For small devices reduce search*/
 
@@ -677,6 +708,29 @@ img {
 
     .proyecto__yweb .item__proyectos {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footer__header .yweb__subdescription p {
+        font-size: 0.7rem;
+    }
+
+    .footer__politicas-datos .footer__header a {
+        font-size: 0.7rem;
+    }
+
+    .float {
+        position:fixed;
+        width:60px;
+        height:60px;
+        bottom:40px;
+    }
+    
+    .float .bx {
+        font-size: 2.7rem
+    }
+    
+    .my-float{
+        margin-top:10px;
     }
 }
 
