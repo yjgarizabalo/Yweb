@@ -421,7 +421,7 @@ img {
 }
 
 .img__proyecto {
-    width: auto;
+    width: 100%;
     height: auto;
     border-radius: 8px;
 }
@@ -722,7 +722,8 @@ img {
         position:fixed;
         width:60px;
         height:60px;
-        bottom:40px;
+        bottom:45px;
+        right:20px;
     }
     
     .float .bx {
