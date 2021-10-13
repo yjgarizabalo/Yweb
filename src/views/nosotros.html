@@ -7,7 +7,7 @@
     <!-- ICON -->
     <link rel="icon" type="image/x-icon" href="./../public/img/favicon-yweb.svg">
     <!-- BOX ICON -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" style="font-display: swap"as="font" onload="this.onload=null;this.rel='stylesheet'">
     <!-- CSS -->
     <link rel="stylesheet" href="./../public/css/main.css">
     <title>Yweb 🚀</title>
@@ -22,7 +22,7 @@
     <meta name="keywords" content="Paginas Web Barranquilla, Dessarrollo Web Barranquilla, Diseño Web Barranquilla, Fotografo Barranquilla">
     <meta name="author" content="Yweb">
     <!-- MANIFIESTO PWA -->
-    <link rel="manifest" href="./src/public/json/manifest.json">
+    <link rel="manifest" href="./../public/json/manifest.json">
     <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/yjgarizabalo/Yweb/master/src/public/img/favicon__yweb.png">
     <meta name="theme-color" content="#130A17">
     </head>
@@ -145,7 +145,7 @@
     </div>
 
     <!-- WHATSAPP -->
-    <a href="https://api.whatsapp.com/send?phone=573015595408&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre." class="float" target="_blank">
+    <a rel="noopener" href="https://api.whatsapp.com/send?phone=573015595408&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre." class="float" target="_blank">
         <i class="bx bxl-whatsapp my-float"></i>
     </a>
 
