@@ -641,6 +641,13 @@ img {
 }
 
 /* Small devices (landscape phones, less than 768px) */
+@media screen and (max-width:998px){
+    .servicio__yweb .card__servicio {
+        height: auto;
+        padding: 20 20;
+    }
+}
+
 @media screen and (max-width: 768px) {
     /* Main */
     .hero__yweb {
