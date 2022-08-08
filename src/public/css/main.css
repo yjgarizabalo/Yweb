@@ -547,6 +547,7 @@ img {
 	text-decoration: none;
 	color: #25d366;
     background-color:#fff;
+    transition: .3s all ease;
 }
 
 .my-float{
@@ -698,7 +699,7 @@ img {
 
     .hero__yweb .yweb__title {
         font-size: 2.5rem;
-        line-height: 1;
+        line-height: 1.1;
     }
 
     .servicio__yweb .yweb__subtitle {
