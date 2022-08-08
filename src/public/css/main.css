@@ -366,7 +366,7 @@ img {
 .servicio__yweb .card__servicio:hover {
     background-color: var(--body-color);
     color: var(--five);
-    transition: .3s;
+    transition: .3s all ease;
 }
 
 .servicio__yweb .servicio__card-header {
@@ -547,7 +547,7 @@ img {
 	text-decoration: none;
 	color: #25d366;
     background-color:#fff;
-    transition: .3s all ease;
+    transition: 0.3s all ease;
 }
 
 .my-float{
@@ -643,6 +643,11 @@ img {
 
 /* Small devices (landscape phones, less than 768px) */
 @media screen and (max-width:998px){
+    .servicio__yweb .item__servicio {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .servicio__yweb .card__servicio {
         height: auto;
         padding: 20 20;
